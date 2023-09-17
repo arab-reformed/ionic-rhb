@@ -1,0 +1,86 @@
+{
+  "books": {
+    "40": {
+      "bookNum": 40,
+      "chapters": 28,
+      "title": "إنجيل متى",
+      "shortTitle": "متى",
+      "fwgTitle": "إنجيل متّى",
+      "abbrev": "مت"
+    },
+    "41": {
+      "bookNum": 41,
+      "chapters": 16,
+      "title": "إنجيل مرقس",
+      "shortTitle": "مرقس",
+      "fwgTitle": "إنجيل مرقس",
+      "abbrev": "مر"
+    },
+    "42": {
+      "bookNum": 42,
+      "chapters": 24,
+      "title": "إنجيل لوقا",
+      "shortTitle": "لوقا",
+      "fwgTitle": "إنجيل لوقا",
+      "abbrev": "لو"
+    },
+    "43": {
+      "bookNum": 43,
+      "chapters": 21,
+      "title": "إنجيل يوحنا",
+      "shortTitle": "يوحنَّا",
+      "fwgTitle": "إنجيل يوحنا",
+      "abbrev": "يو"
+    },
+    "44": {
+      "bookNum": 44,
+      "chapters": 28,
+      "title": "أعمال الرسل",
+      "shortTitle": "أعمال",
+      "fwgTitle": "أعمال الرسل",
+      "abbrev": "اع"
+    },
+    "45": {
+      "bookNum": 45,
+      "chapters": 16,
+      "title": "رومة",
+      "shortTitle": "رومة",
+      "fwgTitle": "رسالة بولس الرسول إلى أهل رومية",
+      "abbrev": "رو"
+    },
+    "46": {
+      "bookNum": 46,
+      "chapters": 16,
+      "title": "كورنثوس الأولى",
+      "shortTitle": "1 كورنثوس",
+      "fwgTitle": "رسالة بولس الرسول الأولى إلى أهل كورنثوس",
+      "abbrev": "1كور"
+    },
+    "47": {
+      "bookNum": 47,
+      "chapters": 13,
+      "title": "كورنثوس الثانية",
+      "shortTitle": "2 كورنثوس",
+      "fwgTitle": "رسالة بولس الرسول الثانية إلى أهل كورنثوس",
+      "abbrev": "2كور"
+    },
+    "48": {
+      "bookNum": 48,
+      "chapters": 6,
+      "title": "غلاطية",
+      "shortTitle": "غلاطية",
+      "fwgTitle": "رسالة بولس الرسول إلى أهل غلاطية",
+      "abbrev": "غل"
+    },
+    "49": {
+      "bookNum": 49,
+      "chapters": 6,
+      "title": "أفسس",
+      "shortTitle": "أفسس",
+      "fwgTitle": "رسالة بولس الرسول إلى أهل أفسس",
+      "abbrev": "اف"
+    }
+  },
+  "lastBookNum": 49,
+  "firstBookNum": 40
+}

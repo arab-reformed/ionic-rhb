@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Inbox</ion-title>
+        <ion-title>أسفار</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -18,7 +18,7 @@
       </ion-header>
 
       <ion-list>
-        <MessageListItem v-for="message in messages" :key="message.id" :message="message" />
+        <BookListItem v-for="book in books" :key="book.bookNum" :book="book" />
       </ion-list>
     </ion-content>
   </ion-page>
@@ -35,11 +35,16 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/vue';
-import MessageListItem from '@/components/MessageListItem.vue';
-import { getMessages, Message } from '@/data/messages';
-import { ref } from 'vue';
 
-const messages = ref<Message[]>(getMessages());
+// import Books from '@/data/fwg-books.json';
+// import MessageListItem from '@/components/MessageListItem.vue';
+// import { getMessages, Message } from '@/data/messages';
+// import { ref } from 'vue';
+import { FwgData } from "@/classes/fwg-data";
+import BookListItem from "@/components/BookListItem.vue";
+
+const books = new FwgData().getBooks();
+// const messages = ref<Message[]>(getMessages());
 
 const refresh = (ev: CustomEvent) => {
   setTimeout(() => {
