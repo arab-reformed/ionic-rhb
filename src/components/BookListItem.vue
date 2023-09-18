@@ -1,18 +1,11 @@
 <template>
   <ion-item v-if="book" :routerLink="'/book/' + book.bookNum" :detail="false" class="list-item">
-    <div slot="start" :class="book.bookNum > 40 ? 'dot dot-unread' : 'dot'"></div>
+<!--    <div slot="start" :class="book.bookNum > 40 ? 'dot dot-unread' : 'dot'"></div>-->
     <ion-label class="ion-text-wrap">
       <h2>
-        {{ book.fwgTitle }}
-        <span class="date">
-          <ion-note>{{ book.shortTitle }}</ion-note>
-          <ion-icon aria-hidden="true" :icon="chevronForward" size="small" v-if="isIos()"></ion-icon>
-        </span>
+        {{ book.title }}
       </h2>
-      <h3>{{ book.title }}</h3>
-<!--      <p>-->
-<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
-<!--      </p>-->
+<!--      <h3>{{ book.title }}</h3>-->
     </ion-label>
   </ion-item>
 </template>
@@ -37,16 +30,19 @@ const isIos = () => {
 .list-item {
   --padding-start: 0;
   --inner-padding-end: 0;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .list-item ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .list-item h2 {
   font-weight: 600;
   margin: 0;
+  text-align: center;
 }
 
 .list-item p {

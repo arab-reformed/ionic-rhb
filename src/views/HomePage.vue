@@ -13,7 +13,7 @@
 
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Inbox</ion-title>
+          <ion-title size="large">أسفار</ion-title>
         </ion-toolbar>
       </ion-header>
 

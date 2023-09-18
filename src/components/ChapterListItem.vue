@@ -1,7 +1,7 @@
 <template>
   <ion-item v-if="book" :routerLink="'/chapter/' + book.bookNum + '/' + chapterNum" :detail="false" class="list-item">
     <ion-label class="ion-text-wrap">
-      <h2>{{ chapterNum }}</h2>
+      <h2>{{ arabic2hindi(chapterNum) }}</h2>
     </ion-label>
   </ion-item>
 </template>
@@ -11,6 +11,7 @@ import { IonIcon, IonItem, IonLabel, IonNote } from '@ionic/vue';
 import { chevronForward } from 'ionicons/icons';
 import { FwgBookIface } from "@/classes/fwg-data";
 import {PropType} from "vue";
+import {arabic2hindi} from "@/lib/markdown";
 
 defineProps({
   book: Object as PropType<FwgBookIface>,

@@ -1,0 +1,12 @@
+.remarkable p.md {
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+.remarkable p.question,
+.remarkable p.سؤال {
+    margin: 4px auto 2em;
+    padding-right: 5em;
+    padding-left: 5em;
+    font-weight: bold;
+    text-align: center;
+}

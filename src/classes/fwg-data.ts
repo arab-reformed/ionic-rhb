@@ -56,4 +56,8 @@ export class FwgData {
     chaptersData(): FwgChaptersRootIface {
         return ChaptersData as FwgChaptersRootIface;
     }
+
+    getChapter(bn: number, cn: number) : FwgChapterIface {
+        return this.chaptersData()[bn][cn];
+    }
 }
