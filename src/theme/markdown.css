@@ -4,9 +4,10 @@
 }
 .remarkable p.question,
 .remarkable p.سؤال {
-    margin: 4px auto 2em;
-    padding-right: 5em;
-    padding-left: 5em;
+    margin-top: 4px;
+    margin-bottom: 2em;
+    padding-right: 3em;
+    padding-left: 3em;
     font-weight: bold;
     text-align: center;
 }

@@ -1,0 +1,14 @@
+= README
+
+== Installation
+
+[source, bash]
+----
+npm install -g @ionic/cli
+npm install
+----
+
+== Test Server
+
+[source,bash]
+ionic serve

@@ -11,7 +11,7 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true" v-if="chapter">
+    <ion-content :fullscreen="true" v-if="chapter" class="chapter-text">
       <h2>{{ chapter.chapterTitle }}</h2>
       <div class="remarkable" v-html="chapterHtml()"></div>    </ion-content>
   </ion-page>
@@ -80,14 +80,19 @@ ion-item ion-note {
   font-weight: normal;
 }
 
-h1 {
-  margin: 0;
-  font-weight: bolder;
+.chapter-text {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.chapter-text h2 {
+  font-weight: bold;
   font-size: 22px;
+  text-align: center;
 }
 
 .chapter-num {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 p {
