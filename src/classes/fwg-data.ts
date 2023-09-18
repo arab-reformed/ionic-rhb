@@ -1,6 +1,7 @@
-import Books from '@/data/fwg-books.json';
+import BooksData from '@/data/fwg-books.json';
+import ChaptersData from '@/data/fwg-chapters.json';
 
-export interface FwgBook {
+export interface FwgBookIface {
     bookNum: number;
     title: string;
     shortTitle: string;
@@ -9,24 +10,38 @@ export interface FwgBook {
     chapters: number;
 }
 
-export interface FwgBooks {
-    [key: string]: FwgBook;
+export interface FwgBooksIface {
+    [key: string]: FwgBookIface;
 }
 
-export interface FwgDataRoot {
-    books: FwgBooks;
+export interface FwgBooksRootIface {
+    books: FwgBooksIface;
+}
+
+
+export interface FwgChapterIface {
+    chapterTitle: string;
+    text: string;
+}
+
+export interface FwgChaptersChaptersIface {
+    [key: string]: FwgChapterIface;
+}
+
+export interface FwgChaptersRootIface {
+    [key: string]: FwgChaptersChaptersIface;
 }
 
 export class FwgData {
 
-    data() : FwgDataRoot {
-        return Books as FwgDataRoot;
+    booksData() : FwgBooksRootIface {
+        return BooksData as FwgBooksRootIface;
     }
 
-    getBooks() : FwgBook[] {
-        const books = this.data().books;
+    getBooks() : FwgBookIface[] {
+        const books = this.booksData().books;
         let bookNum: keyof typeof books;
-        const l : FwgBook[] = [];
+        const l : FwgBookIface[] = [];
         for (bookNum in books) {
             l.push(books[bookNum])
         }
@@ -34,7 +49,11 @@ export class FwgData {
         return l
     }
 
-    getBook(bn: number) : FwgBook {
-        return this.data().books[bn];
+    getBook(bn: number) : FwgBookIface {
+        return this.booksData().books[bn];
+    }
+
+    chaptersData(): FwgChaptersRootIface {
+        return ChaptersData as FwgChaptersRootIface;
     }
 }

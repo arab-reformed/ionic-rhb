@@ -27,14 +27,14 @@ import {
   IonPage,
   IonToolbar,
 } from '@ionic/vue';
-import {FwgBook, FwgData} from "@/classes/fwg-data";
+import {FwgBookIface, FwgData} from "@/classes/fwg-data";
 import ChapterListItem from "@/components/ChapterListItem.vue";
 
 const route = useRoute();
 
 const book = new FwgData().getBook(parseInt(route.params.id as string, 10));
 
-const chaptersList = (book: FwgBook) => {
+const chaptersList = (book: FwgBookIface) => {
   const l : number[] = [];
   for (let i = 1; i <= book.chapters; i++) { l.push(i)}
   return l;

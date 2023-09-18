@@ -20,11 +20,11 @@
 <script setup lang="ts">
 import { IonIcon, IonItem, IonLabel, IonNote } from '@ionic/vue';
 import { chevronForward } from 'ionicons/icons';
-import { FwgBook } from "@/classes/fwg-data";
+import { FwgBookIface } from "@/classes/fwg-data";
 import {PropType} from "vue";
 
 defineProps({
-  book: Object as PropType<FwgBook>
+  book: Object as PropType<FwgBookIface>
 });
 
 const isIos = () => {
