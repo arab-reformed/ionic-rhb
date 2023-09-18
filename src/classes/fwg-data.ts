@@ -23,7 +23,7 @@ export class FwgData {
         return Books as FwgDataRoot;
     }
 
-    getBooks() : object[] {
+    getBooks() : FwgBook[] {
         const books = this.data().books;
         let bookNum: keyof typeof books;
         const l : FwgBook[] = [];
@@ -32,5 +32,9 @@ export class FwgData {
         }
         console.log(l);
         return l
+    }
+
+    getBook(bn: number) : FwgBook {
+        return this.data().books[bn];
     }
 }
