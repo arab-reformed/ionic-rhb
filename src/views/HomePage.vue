@@ -6,7 +6,7 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="ion-padding">
       <ion-refresher slot="fixed" @ionRefresh="refresh($event)">
         <ion-refresher-content></ion-refresher-content>
       </ion-refresher>
@@ -17,9 +17,14 @@
         </ion-toolbar>
       </ion-header>
 
-      <ion-list>
-        <BookListItem v-for="book in books" :key="book.bookNum" :book="book" />
-      </ion-list>
+      <h1>العهد القديم</h1>
+      <div>
+        <book-button-item v-for="book in otBooks" :key="book.bookNum" :book="book"></book-button-item>
+      </div>
+      <h1>العهد الجديد</h1>
+      <div>
+        <book-button-item v-for="book in ntBooks" :key="book.bookNum" :book="book"></book-button-item>
+      </div>
     </ion-content>
   </ion-page>
 </template>
@@ -28,22 +33,19 @@
 import {
   IonContent,
   IonHeader,
-  IonList,
   IonPage,
   IonRefresher,
   IonRefresherContent,
   IonTitle,
-  IonToolbar,
+  IonToolbar
 } from '@ionic/vue';
 
-// import Books from '@/data/fwg-books.json';
-// import MessageListItem from '@/components/MessageListItem.vue';
-// import { getMessages, Message } from '@/data/messages';
-// import { ref } from 'vue';
 import { FwgData } from "@/classes/fwg-data";
-import BookListItem from "@/components/BookListItem.vue";
+import BookButtonItem from "@/components/BookButtonItem.vue";
 
-const books = new FwgData().getBooks();
+const fwg = new FwgData()
+const otBooks = fwg.getOtBooks();
+const ntBooks = fwg.getNtBooks();
 // const messages = ref<Message[]>(getMessages());
 
 const refresh = (ev: CustomEvent) => {
@@ -52,3 +54,9 @@ const refresh = (ev: CustomEvent) => {
   }, 3000);
 };
 </script>
+
+<style scoped>
+h1 {
+  text-align: center;
+}
+</style>

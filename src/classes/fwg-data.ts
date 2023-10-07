@@ -45,7 +45,33 @@ export class FwgData {
         for (bookNum in books) {
             l.push(books[bookNum])
         }
-        console.log(l);
+        // console.log(l);
+        return l
+    }
+
+    getOtBooks() : FwgBookIface[] {
+        const books = this.booksData().books;
+        let bookNum: keyof typeof books;
+        const l : FwgBookIface[] = [];
+        for (bookNum in books) {
+            if (parseInt(bookNum) < 40) {
+                l.push(books[bookNum])
+            }
+        }
+        // console.log(l);
+        return l
+    }
+
+    getNtBooks() : FwgBookIface[] {
+        const books = this.booksData().books;
+        let bookNum: keyof typeof books;
+        const l : FwgBookIface[] = [];
+        for (bookNum in books) {
+            if (parseInt(bookNum) >= 40) {
+                l.push(books[bookNum])
+            }
+        }
+        // console.log(l);
         return l
     }
 

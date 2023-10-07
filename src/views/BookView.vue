@@ -11,8 +11,9 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true" v-if="book">
-      <ChapterListItem v-for="chap in chaptersList(book)" :key="chap" :book="book" :chapter-num="chap"></ChapterListItem>
+    <ion-content :fullscreen="true" class="ion-padding" v-if="book">
+      <chapter-button-item v-for="chap in chaptersList(book)" :key="chap" :book="book" :chapter-num="chap"></chapter-button-item>
+<!--      <ChapterListItem v-for="chap in chaptersList(book)" :key="chap" :book="book" :chapter-num="chap"></ChapterListItem>-->
     </ion-content>
   </ion-page>
 </template>
@@ -29,6 +30,7 @@ import {
 } from '@ionic/vue';
 import {FwgBookIface, FwgData} from "@/classes/fwg-data";
 import ChapterListItem from "@/components/ChapterListItem.vue";
+import ChapterButtonItem from "@/components/ChapterButtonItem.vue";
 
 const route = useRoute();
 

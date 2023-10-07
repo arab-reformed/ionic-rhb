@@ -1,5 +1,141 @@
 {
   "books": {
+    "1": {
+      "bookNum": 1,
+      "chapters": 50,
+      "title": "التكوين",
+      "shortTitle": "تكوين",
+      "fwgTitle": "سفر التكوين",
+      "abbrev": "تك"
+    },
+    "2": {
+      "bookNum": 2,
+      "chapters": 40,
+      "title": "الخروج",
+      "shortTitle": "خروج",
+      "fwgTitle": "سفر الخروج",
+      "abbrev": "خر"
+    },
+    "3": {
+      "bookNum": 3,
+      "chapters": 25,
+      "title": "اللاويين",
+      "shortTitle": "لاويين",
+      "fwgTitle": "سفر اللاويين",
+      "abbrev": "لا"
+    },
+    "4": {
+      "bookNum": 4,
+      "chapters": 36,
+      "title": "العدد",
+      "shortTitle": "عدد",
+      "fwgTitle": "سفر العدد",
+      "abbrev": "عد"
+    },
+    "5": {
+      "bookNum": 5,
+      "chapters": 34,
+      "title": "التثنية",
+      "shortTitle": "تثنية",
+      "fwgTitle": "سفر التثنية",
+      "abbrev": "تث"
+    },
+    "6": {
+      "bookNum": 6,
+      "chapters": 24,
+      "title": "يشوع",
+      "shortTitle": "يشوع",
+      "fwgTitle": "سفر يشوع",
+      "abbrev": "يش"
+    },
+    "7": {
+      "bookNum": 7,
+      "chapters": 21,
+      "title": "قضاة",
+      "shortTitle": "قضاة",
+      "fwgTitle": "سفر القضاة",
+      "abbrev": "قض"
+    },
+    "8": {
+      "bookNum": 8,
+      "chapters": 4,
+      "title": "راعوث",
+      "shortTitle": "راعوث",
+      "fwgTitle": "سفر راعوث",
+      "abbrev": "را"
+    },
+    "9": {
+      "bookNum": 9,
+      "chapters": 31,
+      "title": "صموئيل الأول",
+      "shortTitle": "١ صموئيل",
+      "fwgTitle": "سفر صموئيل الأوَّل",
+      "abbrev": "1صم"
+    },
+    "10": {
+      "bookNum": 10,
+      "chapters": 24,
+      "title": "صموئيل الثاني",
+      "shortTitle": "٢ صموئيل",
+      "fwgTitle": "سفر صموئيل الثاني",
+      "abbrev": "2صم"
+    },
+    "11": {
+      "bookNum": 11,
+      "chapters": 22,
+      "title": "الملوك الأول",
+      "shortTitle": "١ ملوك",
+      "fwgTitle": "سفر الملوك الأوَّل",
+      "abbrev": "1مل"
+    },
+    "12": {
+      "bookNum": 12,
+      "chapters": 24,
+      "title": "الملوك الثاني",
+      "shortTitle": "٢ ملوك",
+      "fwgTitle": "سفر الملوك الثاني",
+      "abbrev": "2مل"
+    },
+    "13": {
+      "bookNum": 13,
+      "chapters": 29,
+      "title": "أخبار الأيام الأول",
+      "shortTitle": "١ أخبار الأيام",
+      "fwgTitle": "سفر أخبار الأيَّام الأوَّل",
+      "abbrev": "1اخ"
+    },
+    "14": {
+      "bookNum": 14,
+      "chapters": 36,
+      "title": "أخبار الأيام الثاني",
+      "shortTitle": "٢ أخبار الأيام",
+      "fwgTitle": "سفر أخبار الأيَّام الثاني",
+      "abbrev": "2اخ"
+    },
+    "15": {
+      "bookNum": 15,
+      "chapters": 10,
+      "title": "عزرا",
+      "shortTitle": "عزرا",
+      "fwgTitle": "سفر عزرا",
+      "abbrev": "عز"
+    },
+    "16": {
+      "bookNum": 16,
+      "chapters": 13,
+      "title": "نحميا",
+      "shortTitle": "نحميا",
+      "fwgTitle": "سفر نحميا",
+      "abbrev": "نح"
+    },
+    "17": {
+      "bookNum": 17,
+      "chapters": 10,
+      "title": "أستير",
+      "shortTitle": "أستير",
+      "fwgTitle": "سفر أستير",
+      "abbrev": "اس"
+    },
     "40": {
       "bookNum": 40,
       "chapters": 28,
@@ -52,7 +188,7 @@
       "bookNum": 46,
       "chapters": 16,
       "title": "كورنثوس الأولى",
-      "shortTitle": "1 كورنثوس",
+      "shortTitle": "١ كورنثوس",
       "fwgTitle": "رسالة بولس الرسول الأولى إلى أهل كورنثوس",
       "abbrev": "1كور"
     },
@@ -60,7 +196,7 @@
       "bookNum": 47,
       "chapters": 13,
       "title": "كورنثوس الثانية",
-      "shortTitle": "2 كورنثوس",
+      "shortTitle": "٢ كورنثوس",
       "fwgTitle": "رسالة بولس الرسول الثانية إلى أهل كورنثوس",
       "abbrev": "2كور"
     },
@@ -82,5 +218,5 @@
     }
   },
   "lastBookNum": 49,
-  "firstBookNum": 40
+  "firstBookNum": 1
 }

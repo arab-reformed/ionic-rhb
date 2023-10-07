@@ -11,9 +11,10 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-content :fullscreen="true" v-if="chapter" class="chapter-text">
-      <h2>{{ chapter.chapterTitle }}</h2>
-      <div class="remarkable" v-html="chapterHtml()"></div>    </ion-content>
+    <ion-content :fullscreen="true" v-if="chapter" class="ion-padding chapter-text">
+      <h2>{{ arabic2hindi(chapter.chapterTitle) }}</h2>
+      <div class="remarkable" v-html="chapterHtml()"></div>
+    </ion-content>
   </ion-page>
 </template>
 
@@ -47,42 +48,9 @@ const getBackButtonText = () => {
 };
 </script>
 
-<style scoped>
-ion-item {
-  --inner-padding-end: 0;
-  --background: transparent;
-}
-
-ion-label {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-ion-item h1 {
-  text-align: center;
-  font-weight: 600;
-}
-
-ion-item .date {
-  float: right;
-  align-items: center;
-  display: flex;
-}
-
-ion-item ion-icon {
-  font-size: 42px;
-  margin-right: 8px;
-}
-
-ion-item ion-note {
-  font-size: 15px;
-  margin-right: 12px;
-  font-weight: normal;
-}
-
-.chapter-text {
-  margin-right: 5px;
-  margin-left: 5px;
+<style>
+.remarkable ol li {
+  list-style-type: arabic-indic;
 }
 
 .chapter-text h2 {
