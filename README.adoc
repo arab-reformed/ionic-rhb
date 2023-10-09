@@ -12,3 +12,9 @@ npm install
 
 [source,bash]
 ionic serve
+
+== TODO
+
+* Save current location
+* Previous and next buttons
+* Book introductions
